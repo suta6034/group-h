@@ -1,0 +1,9 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node/Vue (FE)
+FE/music-app/node_modules/
+FE/music-app/dist/
+FE/music-app/.env
