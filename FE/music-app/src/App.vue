@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
+import VDataTableDemo from './components/VDataTableDemo.vue'
+
 const message = ref('')
 
 onMounted(async () => {
@@ -12,6 +14,7 @@ onMounted(async () => {
 <template>
   <div>
     {{ message }}
+    <VDataTableDemo />
   </div>
 </template>
 
