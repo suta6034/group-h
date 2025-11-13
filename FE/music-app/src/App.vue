@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import TheWelcome from './components/TheWelcome.vue'
+import { ref, onMounted } from 'vue'
+
+const message = ref('')
+
+onMounted(async () => {
+  const res = await fetch('http://localhost:5000/')
+  message.value = await res.text()
+})
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    {{ message }}
+  </div>
 </template>
 
 <style scoped>
