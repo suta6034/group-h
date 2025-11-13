@@ -45,6 +45,7 @@ README.md
 - Vue 3
 - Vite
 - TypeScript
+- Vuetify (UI & styling library)
 - ESLint & Prettier
 
 **Setup Instructions:**
