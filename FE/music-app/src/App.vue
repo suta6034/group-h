@@ -35,7 +35,7 @@ async function fetchSearch() {
 <template>
   <div>
     <h1>Fetched Data from /get-data</h1>
-    <div v-if="error" class="error-message">{{ error }}</div>
+    <div v-if="error" class="error-message text-red-500">{{ error }}</div>
     <ul v-else>
       <li v-for="(item, index) in data.data ?? data" :key="index">{{ item }}</li>
     </ul>
@@ -48,12 +48,4 @@ async function fetchSearch() {
   </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.error-message {
-  color: red;
-}
-</style>
+<style scoped></style>
