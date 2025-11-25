@@ -22,7 +22,7 @@ async function fetchSearch() {
     const res = await fetch('http://localhost:5000/getSongs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ type: 'song', key: 'love', algorithm: 'default' }),
+      body: JSON.stringify({ type: 'genre', key: 'love', algorithm: 'knn' }),
     })
     if (!res.ok) throw new Error('Failed to fetch')
     searchResult.value = await res.json()
